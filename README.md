@@ -1,5 +1,4 @@
-
-
+```markdown
 # Binance Futures Trading Bot
 
 A modular, plug-and-play Python trading bot for Binance USD-M Futures, featuring technical indicators, multi-source sentiment analysis (Reddit & Telegram), trailing stops, risk management, and backtesting capabilities — all wrapped in a Flask-based web UI.
@@ -8,22 +7,23 @@ A modular, plug-and-play Python trading bot for Binance USD-M Futures, featuring
 
 ## Features
 
-* **Modular Architecture**: Clean separation of concerns for easy maintenance and scalability.
-* **Technical Indicators**: RSI, MACD, ADX, ATR, EMA, and more.
-* **Sentiment Analysis**: Integrate Reddit and Telegram sentiment to refine trading signals.
-* **Trailing Stop Loss**: Dynamic trailing stops for better risk control.
-* **Risk Management**: Position sizing, max drawdown, daily loss limits, and circuit breakers.
-* **Backtesting Framework**: Validate strategies on historical Binance futures data.
-* **Flask UI**: User-friendly interface for live monitoring, strategy control, and reporting.
-* **Logging & Performance Metrics**: Trade journaling, win rate, Sharpe ratio, and real-time dashboards.
-* **Robust Error Handling**: Retry logic and circuit breakers for API stability.
+- **Modular Architecture**: Clean separation of concerns for easy maintenance and scalability.
+- **Technical Indicators**: RSI, MACD, ADX, ATR, EMA, and more.
+- **Sentiment Analysis**: Integrate Reddit and Telegram sentiment to refine trading signals.
+- **Trailing Stop Loss**: Dynamic trailing stops for better risk control.
+- **Risk Management**: Position sizing, max drawdown, daily loss limits, and circuit breakers.
+- **Backtesting Framework**: Validate strategies on historical Binance futures data.
+- **Flask UI**: User-friendly interface for live monitoring, strategy control, and reporting.
+- **Logging & Performance Metrics**: Trade journaling, win rate, Sharpe ratio, and real-time dashboards.
+- **Robust Error Handling**: Retry logic and circuit breakers for API stability.
 
 ---
 
 ## Repo Structure
 
 ```
-binance_futures_bot/
+
+binance\_futures\_bot/
 ├── config/                 # Configuration and credentials
 ├── core/                   # Main bot logic, risk management, performance
 ├── data/                   # Data fetching and sentiment analysis modules
@@ -34,7 +34,8 @@ binance_futures_bot/
 ├── utils/                  # Helper utilities and common functions
 ├── tests/                  # Unit tests for components
 └── main.py                 # Entry point to run the bot
-```
+
+````
 
 ---
 
@@ -45,7 +46,7 @@ binance_futures_bot/
 ```bash
 git clone https://github.com/yourusername/binance_futures_bot.git
 cd binance_futures_bot
-```
+````
 
 2. Create and activate a virtual environment:
 
@@ -124,4 +125,6 @@ This bot is for educational and research purposes only. Trading cryptocurrencies
 
 For questions or collaborations, reach out at \[[www.qubitquark.com@gmail.com](mailto:your.email@example.com)].
 
+```
 
+---
