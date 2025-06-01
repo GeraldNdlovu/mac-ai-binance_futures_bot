@@ -122,8 +122,6 @@ This bot is for educational and research purposes only. Trading cryptocurrencies
 
 ## Contact
 
-For questions or collaborations, reach out at \[[your.email@example.com](mailto:your.email@example.com)].
+For questions or collaborations, reach out at \[[www.qubitquark.com@gmail.com](mailto:your.email@example.com)].
 
----
 
-Would you like me to add this README file to the repo directly?
