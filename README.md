@@ -1,3 +1,5 @@
+
+
 ```markdown
 # Binance Futures Trading Bot
 
@@ -123,8 +125,11 @@ This bot is for educational and research purposes only. Trading cryptocurrencies
 
 ## Contact
 
-For questions or collaborations, reach out at \[[www.qubitquark.com@gmail.com](mailto:your.email@example.com)].
+For questions or collaborations, reach out at [your.email@example.com](mailto:your.email@example.com).
 
 ```
 
 ---
+
+If you want, I can also create the matching `requirements.txt` or start scaffolding the first modules next. Just say the word!
+```
