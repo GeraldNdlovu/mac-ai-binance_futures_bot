@@ -1,7 +1,3 @@
-
-
----
-
 ````markdown
 # 🚀 Binance Futures Trading Bot
 
