@@ -1,114 +1,129 @@
-````markdown
-# Binance Futures Trading Bot 🐍📈
 
-A smart algorithmic trading bot for **BTC/USDT Binance USD-M Futures**, combining **technical indicators (RSI, MACD, ADX, ATR)** with **Twitter sentiment analysis** for smarter entry/exit decisions. Built with risk management in mind and designed to run on the **Binance Testnet** for safe testing.
 
----
+# Binance Futures Trading Bot
 
-## 🚀 Features
-
-- 📊 **Indicators Used**: RSI, MACD, ADX (trend strength), ATR (volatility)
-- 🧠 **Sentiment Analysis**: Real-time Twitter sentiment via VADER NLP
-- 🧮 **Risk Management**: Dynamic position sizing (1% risk rule), bracket orders (SL/TP)
-- 🔄 **Automated Trading Loop**: Monitors the market and places trades every cycle
-- 🧪 **Runs on Binance Testnet** for safe and cost-free testing
-- 🪵 **Logging**: Logs all activities in `trading_bot.log`
+A modular, plug-and-play Python trading bot for Binance USD-M Futures, featuring technical indicators, multi-source sentiment analysis (Reddit & Telegram), trailing stops, risk management, and backtesting capabilities — all wrapped in a Flask-based web UI.
 
 ---
 
-## 🛠️ Requirements
+## Features
 
-- Python 3.8+
-- Binance API key and secret (testnet)
-- Twitter developer credentials
-- `.env` file for API keys
-- Dependencies (see below)
+* **Modular Architecture**: Clean separation of concerns for easy maintenance and scalability.
+* **Technical Indicators**: RSI, MACD, ADX, ATR, EMA, and more.
+* **Sentiment Analysis**: Integrate Reddit and Telegram sentiment to refine trading signals.
+* **Trailing Stop Loss**: Dynamic trailing stops for better risk control.
+* **Risk Management**: Position sizing, max drawdown, daily loss limits, and circuit breakers.
+* **Backtesting Framework**: Validate strategies on historical Binance futures data.
+* **Flask UI**: User-friendly interface for live monitoring, strategy control, and reporting.
+* **Logging & Performance Metrics**: Trade journaling, win rate, Sharpe ratio, and real-time dashboards.
+* **Robust Error Handling**: Retry logic and circuit breakers for API stability.
 
 ---
 
-## 📦 Installation
+## Repo Structure
+
+```
+binance_futures_bot/
+├── config/                 # Configuration and credentials
+├── core/                   # Main bot logic, risk management, performance
+├── data/                   # Data fetching and sentiment analysis modules
+├── indicators/             # Technical indicator calculations
+├── execution/              # Binance API interaction and order management
+├── backtesting/            # Backtesting framework and strategies
+├── ui/                     # Flask web app for UI
+├── utils/                  # Helper utilities and common functions
+├── tests/                  # Unit tests for components
+└── main.py                 # Entry point to run the bot
+```
+
+---
+
+## Installation
+
+1. Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/binance-futures-bot.git
-cd binance-futures-bot
+git clone https://github.com/yourusername/binance_futures_bot.git
+cd binance_futures_bot
+```
+
+2. Create and activate a virtual environment:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate    # Linux/macOS
+venv\Scripts\activate       # Windows
+```
+
+3. Install dependencies:
+
+```bash
 pip install -r requirements.txt
-````
-
----
-
-## 🔐 Environment Variables
-
-Create a `.env` file in the root directory and add the following:
-
-```env
-BINANCE_API_KEY=your_binance_api_key
-BINANCE_API_SECRET=your_binance_api_secret
-
-TWITTER_API_KEY=your_twitter_api_key
-TWITTER_API_SECRET=your_twitter_api_secret
-TWITTER_ACCESS_TOKEN=your_access_token
-TWITTER_ACCESS_TOKEN_SECRET=your_access_token_secret
 ```
 
----
+4. Configure your API keys and settings:
 
-## 📈 How It Works
-
-1. Fetches latest market data (`1h` OHLCV) from Binance.
-2. Calculates key indicators (RSI, MACD, ADX, ATR).
-3. Fetches and scores Twitter sentiment.
-4. Generates buy/sell signals only when:
-
-   * Technical indicators align
-   * Sentiment is supportive
-   * ADX confirms strong trend
-5. Dynamically sizes the position and places bracket orders:
-
-   * Market entry
-   * Stop-loss
-   * Take-profit
+* Add your Binance API keys to `config/credentials.py`.
+* Adjust trading parameters in `config/settings.py`.
 
 ---
 
-## 🔁 Running the Bot
+## Usage
+
+### Running the Bot
 
 ```bash
-python3 main.py
+python main.py
 ```
 
-> ⚠️ The bot runs on an infinite loop with a configurable sleep interval. It trades only when all signal conditions are met.
+This starts the bot with live data fetching, signal generation, order execution, and risk management.
 
----
+### Running the Flask UI
 
-## 📋 To-Do / Coming Soon
+```bash
+python ui/app.py
+```
 
-* [ ] Flask web dashboard
-* [ ] Telegram/Reddit sentiment integration
-* [ ] Live PnL and equity tracking
-* [ ] Backtesting module
-* [ ] Trailing stop-loss support
+Access the dashboard at [http://localhost:5000](http://localhost:5000) to monitor performance, view trade history, and control strategies.
 
----
+### Backtesting
 
-## 🧠 Disclaimer
+Run backtests with your preferred strategy and historical data:
 
-This project is for educational and testing purposes only. **Use at your own risk.** Trading cryptocurrencies involves significant financial risk. Never trade real funds without proper testing and due diligence.
-
----
-
-## 👨‍💻 Author
-
-**Gerald Nqobile Ndlovu**
-🧠 Quant enthusiast | 🐍 Python dev | 📍 Philippines
-Feel free to reach out or contribute!
-
----
-
-## ⭐️ Star this repo if you find it helpful!
-
+```bash
+python backtesting/backtest.py
 ```
 
 ---
 
-Let me know your GitHub username so I can plug it into the repo URL. Want a `requirements.txt` file next?
-```
+## Configuration
+
+Modify `config/settings.py` to customize:
+
+* Risk parameters (e.g., risk percent, max drawdown)
+* Indicator thresholds
+* Sentiment weighting
+* API endpoints and timeframes
+* Logging preferences
+
+---
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+
+---
+
+## Disclaimer
+
+This bot is for educational and research purposes only. Trading cryptocurrencies involves risk and you should trade responsibly. The authors are not responsible for any losses incurred.
+
+---
+
+## Contact
+
+For questions or collaborations, reach out at \[[your.email@example.com](mailto:your.email@example.com)].
+
+---
+
+Would you like me to add this README file to the repo directly?
