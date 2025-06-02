@@ -127,9 +127,3 @@ Questions? Collaborations? Reach out at [www.qubitquark.com@gmail.com](mailto:yo
 
 ```
 
----
-
-How’s this vibe? Clear headings, spaced sections, emoji icons for a modern touch, clean bullet points, code blocks with consistent spacing. It will look way nicer on GitHub or other markdown renderers.
-
-If you want, I can also generate a quick **requirements.txt** with typical libs, or help you polish the first module to match this style!
-```
