@@ -1,7 +1,7 @@
 ````markdown
  🚀 Binance Futures Trading Bot
 
-> A **modular, plug-and-play** Python trading bot for Binance USD-M Futures —  
+> A modular, plug-and-play Python trading bot for Binance USD-M Futures —  
 > Featuring advanced technical indicators, multi-source sentiment analysis (Reddit & Telegram),  
 > trailing stops, risk management, backtesting, and a sleek Flask web UI.
 
