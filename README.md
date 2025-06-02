@@ -6,8 +6,7 @@
 > trailing stops, risk management, backtesting, and a sleek Flask web UI.
 
 ---
-
-## ✨ Features
+ ✨ Features
 
 - **Modular Architecture** for easy maintenance & scaling
 - **Technical Indicators:** RSI, MACD, ADX, ATR, EMA, and more
@@ -21,7 +20,7 @@
 
 ---
 
-## 📂 Repo Structure
+ 📂 Repo Structure
 
 ```plaintext
 binance_futures_bot/
@@ -39,9 +38,9 @@ binance_futures_bot/
 
 ---
 
-## ⚙️ Installation
+ ⚙️ Installation
 
-### 1. Clone the repository
+ 1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/binance_futures_bot.git
