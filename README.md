@@ -124,7 +124,7 @@ Authors are not liable for any losses.
 
 ## 📬 Contact
 
-Questions? Collaborations? Reach out at [your.email@example.com](mailto:your.email@example.com)
+Questions? Collaborations? Reach out at [www.qubitquark.com@gmail.com](mailto:your.email@example.com)
 
 ```
 
