@@ -6,7 +6,7 @@
 > trailing stops, risk management, backtesting, and a sleek Flask web UI.
 
 ---
- ✨ Features
+ ✨ Features 
 
 - **Modular Architecture** for easy maintenance & scaling
 - **Technical Indicators:** RSI, MACD, ADX, ATR, EMA, and more
