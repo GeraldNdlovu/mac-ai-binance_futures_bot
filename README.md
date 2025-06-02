@@ -47,7 +47,7 @@ git clone https://github.com/yourusername/binance_futures_bot.git
 cd binance_futures_bot
 ```
 
-### 2. Create & activate a virtual environment
+ 2. Create & activate a virtual environment
 
 ```bash
 python3 -m venv venv
@@ -55,22 +55,22 @@ source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
 ```
 
-### 3. Install dependencies
+ 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure your API keys and settings
+ 4. Configure your API keys and settings
 
 * Add Binance API keys in `config/credentials.py`
 * Adjust trading parameters in `config/settings.py`
 
 ---
 
-## ▶️ Usage
+ ▶️ Usage
 
-### Run the trading bot
+ Run the trading bot
 
 ```bash
 python main.py
@@ -78,7 +78,7 @@ python main.py
 
 Starts live data fetch, signal generation, order execution, & risk management.
 
-### Launch the Flask UI dashboard
+ Launch the Flask UI dashboard
 
 ```bash
 python ui/app.py
@@ -86,7 +86,7 @@ python ui/app.py
 
 Access the UI at [http://localhost:5000](http://localhost:5000) for live monitoring & controls.
 
-### Run backtesting
+ Run backtesting
 
 ```bash
 python backtesting/backtest.py
@@ -94,7 +94,7 @@ python backtesting/backtest.py
 
 ---
 
-## ⚙️ Configuration
+ ⚙️ Configuration
 
 Edit `config/settings.py` to customize:
 
@@ -106,14 +106,14 @@ Edit `config/settings.py` to customize:
 
 ---
 
-## 🤝 Contributing
+ 🤝 Contributing
 
 Feel free to open issues or submit pull requests.
 We welcome community contributions!
 
 ---
 
-## ⚠️ Disclaimer
+ ⚠️ Disclaimer
 
 This bot is for **educational and research purposes only**.
 Trading cryptocurrencies involves risk — trade responsibly.
@@ -121,7 +121,7 @@ Authors are not liable for any losses.
 
 ---
 
-## 📬 Contact
+ 📬 Contact
 
 Questions? Collaborations? Reach out at [www.qubitquark.com@gmail.com](mailto:your.email@example.com)
 
